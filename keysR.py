@@ -1,0 +1,45 @@
+from aiogram.types import ReplyKeyboardMarkup, 	KeyboardButton, ReplyKeyboardRemove
+
+Menu0 = KeyboardButton('В меню')
+
+Menu1 = KeyboardButton('Баланс')
+Menu2 = KeyboardButton('Начать кликать')
+Menu3 = KeyboardButton('Купить динозаврика 🦖')
+Menu4 = KeyboardButton('Купить МЕГА ДИНО 🦕')
+Menu5 = KeyboardButton('Коллекция ДИНО')
+Menu6 = KeyboardButton('Донат')
+
+Buy1 = KeyboardButton('Преобрести ✅')
+Buy2 = KeyboardButton('Отмена ❌')
+
+Click1 = KeyboardButton('Клик')
+Click2 = KeyboardButton('Click')
+
+mega1 = KeyboardButton('Купить ПИВОЗАВРА')
+mega2 = KeyboardButton('Купить ДАВИДОЗАВРА')
+mega3 = KeyboardButton('Купить ТИХОЗАВРА')
+
+apanel = KeyboardButton('Вызвать админ панель')
+
+Dino_buy1 = KeyboardButton('Купить Акилозаврика')
+Dino_buy2 = KeyboardButton('Купить Эвоплоцефалика')
+Dino_buy3 = KeyboardButton('Купить Стегозаврика')
+Dino_buy4 = KeyboardButton('Купить Трицератопсика')
+Dino_buy5 = KeyboardButton('Купить Кронозаврика')
+Dino_buy6 = KeyboardButton('Купить Кархародонтозаврика')
+Dino_buy7 = KeyboardButton('Купить Гиганотозаврика')
+Dino_buy8 = KeyboardButton('Купить Спинозаврика')
+Dino_buy9 = KeyboardButton('Купить Тираннозаврика Рекса')
+Dino_buy10 = KeyboardButton('Купить Аргентинозаврика')
+Menu = ReplyKeyboardMarkup(resize_keyboard=True)
+AMenu = ReplyKeyboardMarkup(resize_keyboard=True)
+Click = ReplyKeyboardMarkup(resize_keyboard=True)
+Dino_buy = ReplyKeyboardMarkup(resize_keyboard=True)
+Buy = ReplyKeyboardMarkup(resize_keyboard=True)
+DINO = ReplyKeyboardMarkup(resize_keyboard=True)
+Menu.add(Menu1).add(Menu2).row(Menu3, Menu4).row(Menu5, Menu6)
+Click.add(Click1).add(Click2).add(Menu0)
+Buy.add(Buy1).add(Buy2)
+Dino_buy.row(Dino_buy1, Dino_buy2, Dino_buy3).row(Dino_buy4, Dino_buy5, Dino_buy6).row(Dino_buy7, Dino_buy8, Dino_buy9).add(Dino_buy10).add(Menu0)
+DINO.add(mega1).insert(mega2).add(mega3).add(Menu0)
+AMenu.add(apanel).add(Menu1).add(Menu2).row(Menu3, Menu4).row(Menu5, Menu6)
